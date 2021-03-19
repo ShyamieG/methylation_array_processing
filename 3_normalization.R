@@ -79,7 +79,7 @@ if (predict.age == T) {
 }
 
 ## Finishing up ----
-cat("finished probe QC, saving RData object and writing out .csvs\n")
+cat("finished probe QC, saving RData object and writing out .csv files\n")
 save(list=c("Dat.funnorm.BMIQ", "phenos.df"), file=paste(output,"RData",sep="."))
 write.csv(phenos.df, paste(output,"_sampleInfo.csv",sep=""), quote=F, row.names=F)
 write.csv(Dat.funnorm.BMIQ.df, paste(output,"_normBetas.csv",sep=""), quote=F)

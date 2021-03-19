@@ -59,4 +59,5 @@ cat("done\n")
 
 ## Finishing up ----
 cat("finished probe QC, saving RData object\n")
+save(list="Dat", file=paste(output,"_rawData.RData",sep=""))
 save(list=c("Dat.sample.probesQCed", "XY.probes", "detP.fail.probes", "CR.probes", "phenos.df", "detP", "pval.thresh", "drop_sex_mismatches"), file=paste(output,"RData",sep="."))
