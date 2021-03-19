@@ -16,3 +16,9 @@ IlluminaHumanMethylationEPICmanifest
 IlluminaHumanMethylationEPICanno.ilm10b4.hg19
 FlowSorted.Blood.450k
 FlowSorted.Blood.EPIC
+
+-- RUNNING THE PIPELINE --
+1. Copy all scripts to a working directory
+2. Specify all desired options for the R scripts within 'process_methylation_data.sh', including adding paths to .idats, sample sheets, etc.
+3. Set up and activate the working environment as described above
+4. Execute 'process_methylation_data.sh'
