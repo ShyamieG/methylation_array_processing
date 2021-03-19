@@ -96,4 +96,5 @@ if (length(signal.failed.samples)>0) {
 
 ## Finishing up ----
 cat("finished sample QC, saving RData object\n")
+save(list="Dat", file=paste(output,"_rawData.RData",sep=""))
 save(list=c("Dat.sampleQCed", "detP", "phenos.df", "pval.thresh", "drop_sex_mismatches"), file=paste(output,"RData",sep="."))
